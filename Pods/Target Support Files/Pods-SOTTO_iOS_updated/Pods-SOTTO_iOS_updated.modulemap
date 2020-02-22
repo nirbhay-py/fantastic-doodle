@@ -1,0 +1,6 @@
+framework module Pods_SOTTO_iOS_updated {
+  umbrella header "Pods-SOTTO_iOS_updated-umbrella.h"
+
+  export *
+  module * { export * }
+}
