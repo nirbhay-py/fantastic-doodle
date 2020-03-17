@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key></key>
+	<string></string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>&quot;We need access to your library to save your card to your device.&quot;</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>&quot;We need access to your library to save your card to your device.&quot;</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -23,7 +29,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.123359906251-65g3c6f2rc00oju862755sk7313281m1</string>
+				<string>com.googleusercontent.apps.79253404477-dk9jg03hn8ggf6cgd9dihqshcu9ndb76</string>
 			</array>
 		</dict>
 	</array>

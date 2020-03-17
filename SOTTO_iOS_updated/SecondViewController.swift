@@ -11,8 +11,7 @@ import UIKit
 class SecondViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSource{
     override func viewDidAppear(_ animated: Bool) {
         if(globalUser.isGuest){
-            showAlert(msg: "You must be logged in in order to pledge.")
-            self.performSegue(withIdentifier: "toBack", sender: self)
+            showAlert(msg: "You must be logged in in order to pledge. Please exit the app and sign in to continue.")
         }
     }
     var stringDate:String!
@@ -27,6 +26,7 @@ class SecondViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewD
         super.viewDidLoad()
         self.picker.delegate = self
         self.picker.dataSource = self
+        print(bloodGroups)
         // Do any additional setup after loading the view.
         if(globalUser.hasPledged){
             mainLbl.text = "Hi, "+globalUser.givenName+". You have already made a pledge to be an organ donor. If you want, you can update your information below."
@@ -42,8 +42,9 @@ class SecondViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewD
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return bloodGroups[row]
     }
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         bloodGroup = bloodGroups[row]
+        print(bloodGroup)
     }
     @IBAction func datePickerChanged(_ sender: Any) {
         let dateFormatter = DateFormatter()
@@ -54,20 +55,25 @@ class SecondViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewD
     }
 
     @IBAction func proceedClicked(_ sender: Any) {
-        let now = Date()
-        let birthday: Date = birthdatePicker.date
-        let calendar = Calendar.current
-        let ageComponents = calendar.dateComponents([.year], from: birthday, to: now)
-        let age = ageComponents.year!
-        if(nameTf.text==""||addressTf.text == ""){
-                showAlert(msg: "You cannot leave fields blank!")
-        }else if(age<18){
-            showAlert(msg: "You must be atleast 18 to register.")
-        }else if(addressTf.text!.count<15){
-            showAlert(msg: "Your address must contain atleast 15 characters.")
+        if(globalUser.isGuest){
+            showAlert(msg: "You must be signed in to continue. Please exit the app and sign in to continue.")
         }else{
-            globalPledgee = Pledgee(name: nameTf.text!, birthdate: stringDate, bloodType: bloodGroup, address: addressTf.text!, email: globalUser.email, organsToDonate: [""], tissuesToDonate:[""])
-            self.performSegue(withIdentifier: "toPledge2", sender: nil)
+            let now = Date()
+            let birthday: Date = birthdatePicker.date
+            let calendar = Calendar.current
+            let ageComponents = calendar.dateComponents([.year], from: birthday, to: now)
+            let age = ageComponents.year!
+            if(nameTf.text==""||addressTf.text == ""){
+                    showAlert(msg: "You cannot leave fields blank!")
+            }else if(age<18){
+                showAlert(msg: "You must be atleast 18 to register.")
+            }else if(addressTf.text!.count<15){
+                showAlert(msg: "Your address must contain atleast 15 characters.")
+            }else{
+                print(bloodGroup)
+                globalPledgee = Pledgee(name: nameTf.text!, birthdate: stringDate, bloodType: bloodGroup, address: addressTf.text!, email: globalUser.email, organsToDonate: [""], tissuesToDonate:[""])
+                self.performSegue(withIdentifier: "toPledge2", sender: nil)
+            }
         }
     }
     override func viewWillAppear(_ animated: Bool) {

@@ -93,7 +93,16 @@ class signInVC: UIViewController,GIDSignInDelegate{
                 let photoURL = value!["photoURL"] as! String
                 let hasPledged = value!["Pledgee"] as! Bool
                 globalUser = GoogleUser(name: name, email: email, givenName: givenName, isGuest: false, photoURL: photoURL,hasPledged: hasPledged)
-                localHud.dismiss()
+                if(globalUser.hasPledged){
+                    let organRef = Firebase.Database.database().reference().child("pledges-node").child(splitString(str: globalUser.email, delimiter: "."))
+                    organRef.observeSingleEvent(of: .value, with:{ (snapshot) in
+                         let value = snapshot.value as? NSDictionary
+                        print(value)
+                        globalPledgee = Pledgee(name: value!["Full-legal-name"] as! String, birthdate: value!["Birthdate"] as! String, bloodType: value!["Blood-group"] as! String, address: value!["Address"] as! String, email: value!["Email"] as! String, organsToDonate: value!["Organs"] as! [String], tissuesToDonate:  value!["Tissues"] as! [String])
+                        
+                    })
+                    localHud.dismiss()
+                }
                 self.performSegue(withIdentifier: "toDashboard", sender: self)
             }){ (error) in
                 print(error.localizedDescription)

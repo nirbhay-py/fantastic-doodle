@@ -79,13 +79,13 @@ class pledge2VC: UIViewController,MFMailComposeViewControllerDelegate{
                            "Organs":organs,
                            "Tissues":tissues
                            ] as [String : Any]
-            let ref = Firebase.Database.database().reference().child("pledges-node").childByAutoId()
+            let ref = Firebase.Database.database().reference().child("pledges-node").child(splitString(str: globalUser.email, delimiter: "."))
             ref.setValue(organDic) {(error, ref) -> Void in
                 if(error==nil){
                     globalUser.hasPledged=true
-                    let ref = Firebase.Database.database().reference().child("user-node").child(splitString(str: globalUser.email, delimiter: "."))
+                    let locref = Firebase.Database.database().reference().child("user-node").child(splitString(str: globalUser.email, delimiter: "."))
                     let updates = ["Pledgee":true]
-                    ref.updateChildValues(updates) {(error,ref) -> Void in
+                    locref.updateChildValues(updates) {(error,ref) -> Void in
                         if(error==nil){
                             showSuccess(msg: "You have successfully made a pledge!")
                             self.hud.dismiss()

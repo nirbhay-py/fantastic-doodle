@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1C177C7123FE91A90084D9C8 /* cardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C177C7023FE91A90084D9C8 /* cardVC.swift */; };
+		1C349EA724210D660060BCC5 /* whatWeDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C349EA624210D660060BCC5 /* whatWeDoVC.swift */; };
+		1C349EA9242112F10060BCC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C349EA8242112F10060BCC5 /* GoogleService-Info.plist */; };
+		1C349EAB24212B8F0060BCC5 /* iecVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C349EAA24212B8F0060BCC5 /* iecVC.swift */; };
 		1CC8530523F964D7000FB817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC8530423F964D7000FB817 /* AppDelegate.swift */; };
 		1CC8530723F964D7000FB817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC8530623F964D7000FB817 /* SceneDelegate.swift */; };
 		1CC8530923F964D7000FB817 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC8530823F964D7000FB817 /* FirstViewController.swift */; };
@@ -15,7 +18,6 @@
 		1CC8530E23F964D7000FB817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC8530C23F964D7000FB817 /* Main.storyboard */; };
 		1CC8531023F964DE000FB817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC8530F23F964DE000FB817 /* Assets.xcassets */; };
 		1CC8531323F964DE000FB817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC8531123F964DE000FB817 /* LaunchScreen.storyboard */; };
-		1CC8531B23F96854000FB817 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CC8531A23F96853000FB817 /* GoogleService-Info.plist */; };
 		1CC8531D23F96941000FB817 /* signInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC8531C23F96941000FB817 /* signInVC.swift */; };
 		1CC8531F23F96970000FB817 /* GoogleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC8531E23F96970000FB817 /* GoogleUser.swift */; };
 		1CC8532123F9698D000FB817 /* Pledgee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC8532023F9698D000FB817 /* Pledgee.swift */; };
@@ -28,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		1C177C7023FE91A90084D9C8 /* cardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardVC.swift; sourceTree = "<group>"; };
+		1C349EA624210D660060BCC5 /* whatWeDoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatWeDoVC.swift; sourceTree = "<group>"; };
+		1C349EA8242112F10060BCC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1C349EAA24212B8F0060BCC5 /* iecVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iecVC.swift; sourceTree = "<group>"; };
 		1CC8530123F964D7000FB817 /* SOTTO_iOS_updated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOTTO_iOS_updated.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC8530423F964D7000FB817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CC8530623F964D7000FB817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +42,6 @@
 		1CC8530F23F964DE000FB817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CC8531223F964DE000FB817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CC8531423F964DE000FB817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CC8531A23F96853000FB817 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1CC8531C23F96941000FB817 /* signInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInVC.swift; sourceTree = "<group>"; };
 		1CC8531E23F96970000FB817 /* GoogleUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleUser.swift; sourceTree = "<group>"; };
 		1CC8532023F9698D000FB817 /* Pledgee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pledgee.swift; sourceTree = "<group>"; };
@@ -101,13 +105,15 @@
 				1CC8530F23F964DE000FB817 /* Assets.xcassets */,
 				1CC8531123F964DE000FB817 /* LaunchScreen.storyboard */,
 				1CC8531423F964DE000FB817 /* Info.plist */,
-				1CC8531A23F96853000FB817 /* GoogleService-Info.plist */,
 				1CC8532023F9698D000FB817 /* Pledgee.swift */,
 				1CC8532223F969C8000FB817 /* AppUtils.swift */,
 				1CC8532423F990FA000FB817 /* Document.pdf */,
 				1CC8532623F99137000FB817 /* faqVC.swift */,
 				1CC8532823F9BC69000FB817 /* pledge2VC.swift */,
 				1C177C7023FE91A90084D9C8 /* cardVC.swift */,
+				1C349EA624210D660060BCC5 /* whatWeDoVC.swift */,
+				1C349EA8242112F10060BCC5 /* GoogleService-Info.plist */,
+				1C349EAA24212B8F0060BCC5 /* iecVC.swift */,
 			);
 			path = SOTTO_iOS_updated;
 			sourceTree = "<group>";
@@ -183,10 +189,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CC8531323F964DE000FB817 /* LaunchScreen.storyboard in Resources */,
-				1CC8531B23F96854000FB817 /* GoogleService-Info.plist in Resources */,
 				1CC8532523F990FA000FB817 /* Document.pdf in Resources */,
 				1CC8531023F964DE000FB817 /* Assets.xcassets in Resources */,
 				1CC8530E23F964D7000FB817 /* Main.storyboard in Resources */,
+				1C349EA9242112F10060BCC5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C349EAB24212B8F0060BCC5 /* iecVC.swift in Sources */,
 				1C177C7123FE91A90084D9C8 /* cardVC.swift in Sources */,
 				1CC8530B23F964D7000FB817 /* SecondViewController.swift in Sources */,
 				1CC8532723F99137000FB817 /* faqVC.swift in Sources */,
@@ -263,6 +270,7 @@
 				1CC8532123F9698D000FB817 /* Pledgee.swift in Sources */,
 				1CC8530923F964D7000FB817 /* FirstViewController.swift in Sources */,
 				1CC8532323F969C8000FB817 /* AppUtils.swift in Sources */,
+				1C349EA724210D660060BCC5 /* whatWeDoVC.swift in Sources */,
 				1CC8530523F964D7000FB817 /* AppDelegate.swift in Sources */,
 				1CC8531F23F96970000FB817 /* GoogleUser.swift in Sources */,
 				1CC8530723F964D7000FB817 /* SceneDelegate.swift in Sources */,

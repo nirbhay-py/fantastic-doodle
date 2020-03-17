@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,56 +19,70 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAN-s1-Uyv">
                                 <rect key="frame" x="40" y="40" width="129.5" height="37"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyb-uP-D8F">
-                                <rect key="frame" x="40" y="137" width="139" height="45"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
-                                <state key="normal" title="What we do ">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="a2T-Iz-GYr" kind="show" id="rAv-DC-lRR"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGK-bK-xEa">
-                                <rect key="frame" x="40" y="222" width="104" height="45"/>
+                                <rect key="frame" x="40" y="212" width="104" height="45"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
-                                <state key="normal" title="Our team"/>
+                                <state key="normal" title="Our team">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="cpk-r2-5tA" kind="show" id="TjA-an-tqh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbc-Fw-osF">
-                                <rect key="frame" x="40" y="307" width="208" height="45"/>
+                                <rect key="frame" x="40" y="297" width="208" height="45"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
-                                <state key="normal" title="Our responsibilities"/>
+                                <state key="normal" title="Our responsibilities">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="iZX-jm-KcI" kind="show" id="hry-kq-3N1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmd-x9-BL0">
-                                <rect key="frame" x="40" y="392" width="224" height="45"/>
+                                <rect key="frame" x="40" y="382" width="224" height="45"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
-                                <state key="normal" title="Promotional material"/>
+                                <state key="normal" title="Promotional material">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ucu-jj-2ff" kind="show" id="Qqx-9A-U9e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVs-fZ-pxT">
-                                <rect key="frame" x="40" y="477" width="216" height="45"/>
+                                <rect key="frame" x="40" y="467" width="216" height="45"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
-                                <state key="normal" title="Get in touch with us"/>
+                                <state key="normal" title="Get in touch with us">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HD3-I9-6fp" kind="show" id="21k-lq-QaM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkf-aD-xo0">
+                                <rect key="frame" x="40" y="127" width="133" height="45"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
+                                <state key="normal" title="What we do">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="a2T-Iz-GYr" kind="show" id="ULf-ZT-s8J"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wAN-s1-Uyv" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="40" id="24E-rX-FC9"/>
-                            <constraint firstItem="Qyb-uP-D8F" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="40" id="3IE-4I-ZwE"/>
+                            <constraint firstItem="jGK-bK-xEa" firstAttribute="top" secondItem="Rkf-aD-xo0" secondAttribute="bottom" constant="40" id="BKk-GH-Z4u"/>
                             <constraint firstItem="Xbc-Fw-osF" firstAttribute="top" secondItem="jGK-bK-xEa" secondAttribute="bottom" constant="40" id="NHD-N0-u3U"/>
-                            <constraint firstItem="Qyb-uP-D8F" firstAttribute="top" secondItem="wAN-s1-Uyv" secondAttribute="bottom" constant="60" id="ON2-et-u3m"/>
+                            <constraint firstItem="Rkf-aD-xo0" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="40" id="QtK-x2-kSh"/>
                             <constraint firstItem="LVs-fZ-pxT" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="40" id="Tj0-OP-KOj"/>
                             <constraint firstItem="wAN-s1-Uyv" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="40" id="UgL-UE-NGP"/>
-                            <constraint firstItem="jGK-bK-xEa" firstAttribute="top" secondItem="Qyb-uP-D8F" secondAttribute="bottom" constant="40" id="V5L-Mu-Nqp"/>
                             <constraint firstItem="LVs-fZ-pxT" firstAttribute="top" secondItem="Bmd-x9-BL0" secondAttribute="bottom" constant="40" id="a5L-uQ-4X8"/>
+                            <constraint firstItem="Rkf-aD-xo0" firstAttribute="top" secondItem="wAN-s1-Uyv" secondAttribute="bottom" constant="50" id="c8M-uH-OXc"/>
                             <constraint firstItem="Xbc-Fw-osF" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="40" id="cZ7-O3-8EF"/>
                             <constraint firstItem="Bmd-x9-BL0" firstAttribute="top" secondItem="Xbc-Fw-osF" secondAttribute="bottom" constant="40" id="cqS-Up-aDl"/>
                             <constraint firstItem="Bmd-x9-BL0" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="40" id="rqd-aB-TrM"/>
@@ -78,7 +93,7 @@
                     <tabBarItem key="tabBarItem" title="About us" image="info.circle" catalog="system" selectedImage="info.circle" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="cL4-Zb-vJn"/>
                     <connections>
-                        <outlet property="c1" destination="3IE-4I-ZwE" id="0uS-Vq-JDC"/>
+                        <outlet property="c1" destination="QtK-x2-kSh" id="c9M-Qc-7Le"/>
                         <outlet property="c2" destination="zrb-hj-0rT" id="sVh-mv-mRn"/>
                         <outlet property="c3" destination="cZ7-O3-8EF" id="y8B-WQ-hYG"/>
                         <outlet property="c4" destination="rqd-aB-TrM" id="4eM-Lf-942"/>
@@ -101,12 +116,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our responsibilities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zv3-sS-D33">
                                 <rect key="frame" x="40" y="40" width="222" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6nd-pD-76J">
                                 <rect key="frame" x="20" y="112.5" width="335" height="494.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">1. Maintaining the waiting list of the patients requiring/needing transplants.  
 2. Facilitating multi organ retrieval from a Brain stem death donor. Co-ordination for procurement of organ from a donor till the transplantation into a recipient. 
 3. Matching of recipients with donor and organ allocation as per the designed policy within the State including distribution of organs and tissues. 
@@ -120,12 +135,12 @@ survival rates etc. 
 10. Policy for uninsured poor organ recipients 
 11. Plan for organ donation awareness at a grass root level 
 12. Establishment of all tissue banks for eg. eye bank, tissue bank, bone bank and skin bank</string>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zv3-sS-D33" firstAttribute="top" secondItem="mnq-zO-qUs" secondAttribute="top" constant="40" id="87E-B1-Ggj"/>
                             <constraint firstItem="mnq-zO-qUs" firstAttribute="trailing" secondItem="6nd-pD-76J" secondAttribute="trailing" constant="20" id="bVq-Uh-uDZ"/>
@@ -267,7 +282,7 @@ survival rates etc. 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="178" y="1092"/>
+            <point key="canvasLocation" x="231" y="674"/>
         </scene>
         <!--Pledge2VC-->
         <scene sceneID="EJs-6a-PIG">
@@ -467,12 +482,12 @@ survival rates etc. 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdE-OL-9mP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="951" y="760"/>
+            <point key="canvasLocation" x="953" y="675"/>
         </scene>
-        <!--View Controller-->
+        <!--What We DoVC-->
         <scene sceneID="lCU-WJ-dbx">
             <objects>
-                <viewController id="a2T-Iz-GYr" sceneMemberID="viewController">
+                <viewController id="a2T-Iz-GYr" customClass="whatWeDoVC" customModule="SOTTO_iOS_updated" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SGO-FY-6rn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -480,7 +495,7 @@ survival rates etc. 
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What we do " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3UK-sm-6i2">
                                 <rect key="frame" x="40" y="40" width="144.5" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gN-UN-cam">
@@ -491,12 +506,12 @@ done every year against a requirement of 1 Lakh. 
 To run cadaver transplant program smoothly and breach the gap between demand and supply of organs
 in the state of Rajasthan, State Organ &amp; Tissue Transplant Organization was established in SMS Medical
 College, JLN Road, Jaipur in April 2019.</string>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8gN-UN-cam" firstAttribute="top" secondItem="3UK-sm-6i2" secondAttribute="bottom" constant="40" id="3Zb-zx-DgD"/>
                             <constraint firstItem="3UK-sm-6i2" firstAttribute="top" secondItem="asP-mE-v8A" secondAttribute="top" constant="40" id="BSi-4U-bnp"/>
@@ -508,6 +523,9 @@ College, JLN Road, Jaipur in April 2019.</string>
                         <viewLayoutGuide key="safeArea" id="asP-mE-v8A"/>
                     </view>
                     <navigationItem key="navigationItem" id="cwV-54-kRA"/>
+                    <connections>
+                        <outlet property="mainTextView" destination="8gN-UN-cam" id="CMo-Xf-Aln"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S8X-GT-u0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -529,7 +547,7 @@ College, JLN Road, Jaipur in April 2019.</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvP-Ri-CbD">
-                                <rect key="frame" x="187.5" y="106" width="0.0" height="0.0"/>
+                                <rect key="frame" x="187.5" y="50" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -584,7 +602,7 @@ College, JLN Road, Jaipur in April 2019.</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donor name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71O-qG-bU2">
                                 <rect key="frame" x="20" y="20" width="108.5" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1p-Ih-UlJ">
@@ -596,7 +614,7 @@ College, JLN Road, Jaipur in April 2019.</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donor address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34u-ib-Hy8">
                                 <rect key="frame" x="20" y="93.5" width="130.5" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZF-pA-EVD">
@@ -608,7 +626,7 @@ College, JLN Road, Jaipur in April 2019.</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eld-V0-aMi">
                                 <rect key="frame" x="20" y="167" width="108.5" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpH-Gx-o9b">
@@ -617,72 +635,69 @@ College, JLN Road, Jaipur in April 2019.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1f-rk-oSv">
-                                <rect key="frame" x="20" y="240.5" width="48" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organs for donation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPq-8b-k8V">
+                                <rect key="frame" x="20" y="240.5" width="177.5" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaC-bE-WtU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAz-RL-kdq">
                                 <rect key="frame" x="20" y="278.5" width="335" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organs for donation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPq-8b-k8V">
-                                <rect key="frame" x="20" y="314" width="177.5" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tissues for donation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAX-Id-Wjc">
+                                <rect key="frame" x="20" y="314" width="181" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAz-RL-kdq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRg-sj-yh8">
                                 <rect key="frame" x="20" y="352" width="335" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tissues for donation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAX-Id-Wjc">
-                                <rect key="frame" x="20" y="387.5" width="181" height="23"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRg-sj-yh8">
-                                <rect key="frame" x="20" y="425.5" width="335" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H19-bF-yLl">
+                                <rect key="frame" x="323" y="546" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="6OQ-CU-Smj"/>
+                                    <constraint firstAttribute="width" constant="32" id="ezv-rT-VRc"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="square.and.arrow.down" catalog="system"/>
+                                <connections>
+                                    <action selector="save:" destination="eyS-Le-D78" eventType="touchUpInside" id="Eke-v2-846"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="71O-qG-bU2" firstAttribute="top" secondItem="qmc-aI-hnC" secondAttribute="top" constant="20" id="12Q-fG-nv2"/>
                             <constraint firstItem="Eld-V0-aMi" firstAttribute="top" secondItem="UZF-pA-EVD" secondAttribute="bottom" constant="15" id="2jf-Hq-m6z"/>
                             <constraint firstItem="VRg-sj-yh8" firstAttribute="top" secondItem="YAX-Id-Wjc" secondAttribute="bottom" constant="15" id="6Y1-fp-wYL"/>
-                            <constraint firstItem="qmc-aI-hnC" firstAttribute="trailing" secondItem="UaC-bE-WtU" secondAttribute="trailing" constant="20" id="7r6-4r-4OD"/>
+                            <constraint firstItem="dPq-8b-k8V" firstAttribute="top" secondItem="KpH-Gx-o9b" secondAttribute="bottom" constant="15" id="8Gc-LX-WHw"/>
                             <constraint firstItem="IAz-RL-kdq" firstAttribute="top" secondItem="dPq-8b-k8V" secondAttribute="bottom" constant="15" id="8ie-MX-a8g"/>
                             <constraint firstItem="IAz-RL-kdq" firstAttribute="leading" secondItem="dPq-8b-k8V" secondAttribute="leading" id="AXZ-RV-rSI"/>
                             <constraint firstItem="34u-ib-Hy8" firstAttribute="leading" secondItem="qmc-aI-hnC" secondAttribute="leading" constant="20" id="B6y-jn-WVP"/>
                             <constraint firstItem="KpH-Gx-o9b" firstAttribute="leading" secondItem="Eld-V0-aMi" secondAttribute="leading" id="DFU-41-oMG"/>
                             <constraint firstItem="S1p-Ih-UlJ" firstAttribute="top" secondItem="71O-qG-bU2" secondAttribute="bottom" constant="15" id="EIh-2G-33R"/>
                             <constraint firstItem="YAX-Id-Wjc" firstAttribute="leading" secondItem="qmc-aI-hnC" secondAttribute="leading" constant="20" id="FqT-CI-NDf"/>
-                            <constraint firstItem="b1f-rk-oSv" firstAttribute="leading" secondItem="qmc-aI-hnC" secondAttribute="leading" constant="20" id="I1z-rm-sx6"/>
-                            <constraint firstItem="dPq-8b-k8V" firstAttribute="top" secondItem="UaC-bE-WtU" secondAttribute="bottom" constant="15" id="KHV-5C-bZA"/>
                             <constraint firstItem="qmc-aI-hnC" firstAttribute="trailing" secondItem="IAz-RL-kdq" secondAttribute="trailing" constant="20" id="Kic-9h-G7v"/>
                             <constraint firstItem="dPq-8b-k8V" firstAttribute="leading" secondItem="qmc-aI-hnC" secondAttribute="leading" constant="20" id="QVD-xa-jLR"/>
                             <constraint firstItem="qmc-aI-hnC" firstAttribute="trailing" secondItem="UZF-pA-EVD" secondAttribute="trailing" constant="20" id="Qti-i0-KHM"/>
                             <constraint firstItem="qmc-aI-hnC" firstAttribute="trailing" secondItem="KpH-Gx-o9b" secondAttribute="trailing" constant="20" id="Qz4-XK-8rO"/>
                             <constraint firstItem="UZF-pA-EVD" firstAttribute="leading" secondItem="34u-ib-Hy8" secondAttribute="leading" id="Ruz-po-yx1"/>
-                            <constraint firstItem="UaC-bE-WtU" firstAttribute="leading" secondItem="b1f-rk-oSv" secondAttribute="leading" id="Ug5-RB-uL6"/>
                             <constraint firstItem="qmc-aI-hnC" firstAttribute="trailing" secondItem="VRg-sj-yh8" secondAttribute="trailing" constant="20" id="YpF-Kh-svg"/>
                             <constraint firstItem="KpH-Gx-o9b" firstAttribute="top" secondItem="Eld-V0-aMi" secondAttribute="bottom" constant="15" id="bfR-c0-UO7"/>
                             <constraint firstItem="Eld-V0-aMi" firstAttribute="leading" secondItem="qmc-aI-hnC" secondAttribute="leading" constant="20" id="bfe-Ct-45T"/>
+                            <constraint firstItem="qmc-aI-hnC" firstAttribute="trailing" secondItem="H19-bF-yLl" secondAttribute="trailing" constant="20" id="cTo-uL-SNP"/>
                             <constraint firstItem="qmc-aI-hnC" firstAttribute="trailing" secondItem="S1p-Ih-UlJ" secondAttribute="trailing" constant="20" id="gwe-Jt-bjH"/>
+                            <constraint firstItem="qmc-aI-hnC" firstAttribute="bottom" secondItem="H19-bF-yLl" secondAttribute="bottom" constant="20" id="i5T-SJ-xb3"/>
                             <constraint firstItem="YAX-Id-Wjc" firstAttribute="top" secondItem="IAz-RL-kdq" secondAttribute="bottom" constant="15" id="mJV-Ta-gNv"/>
                             <constraint firstItem="VRg-sj-yh8" firstAttribute="leading" secondItem="YAX-Id-Wjc" secondAttribute="leading" id="nRC-dI-0xU"/>
                             <constraint firstItem="S1p-Ih-UlJ" firstAttribute="leading" secondItem="71O-qG-bU2" secondAttribute="leading" id="o3o-eX-sEM"/>
-                            <constraint firstItem="UaC-bE-WtU" firstAttribute="top" secondItem="b1f-rk-oSv" secondAttribute="bottom" constant="15" id="o5E-yi-1M9"/>
-                            <constraint firstItem="b1f-rk-oSv" firstAttribute="top" secondItem="KpH-Gx-o9b" secondAttribute="bottom" constant="15" id="sXN-Id-NvV"/>
                             <constraint firstItem="71O-qG-bU2" firstAttribute="leading" secondItem="qmc-aI-hnC" secondAttribute="leading" constant="20" id="uH2-iP-q11"/>
                             <constraint firstItem="34u-ib-Hy8" firstAttribute="top" secondItem="S1p-Ih-UlJ" secondAttribute="bottom" constant="15" id="uHg-6Y-Ejh"/>
                             <constraint firstItem="UZF-pA-EVD" firstAttribute="top" secondItem="34u-ib-Hy8" secondAttribute="bottom" constant="15" id="yFL-k6-Fvq"/>
@@ -693,16 +708,88 @@ College, JLN Road, Jaipur in April 2019.</string>
                     <connections>
                         <outlet property="addressLbl" destination="UZF-pA-EVD" id="B2A-kh-JHy"/>
                         <outlet property="bloodGroupLbl" destination="KpH-Gx-o9b" id="4OM-Zh-Lq9"/>
-                        <outlet property="emailLbl" destination="IAz-RL-kdq" id="IqW-dA-ha2"/>
                         <outlet property="nameLbl" destination="S1p-Ih-UlJ" id="myn-5b-iO1"/>
-                        <outlet property="organsLbl" destination="IAz-RL-kdq" id="yqo-hu-QNS"/>
+                        <outlet property="organsLbl" destination="IAz-RL-kdq" id="5uW-Xi-VeY"/>
+                        <outlet property="saveBtn" destination="H19-bF-yLl" id="FRV-kP-o4V"/>
                         <outlet property="tissuesLbl" destination="VRg-sj-yh8" id="yqQ-aa-Tlc"/>
                         <segue destination="8rJ-Kc-sve" kind="show" identifier="toDonor" id="InM-eh-0Ty"/>
+                        <segue destination="YKz-KO-d7S" kind="show" identifier="back" id="1pJ-L8-OwU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RnN-Op-d8h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="-680"/>
+            <point key="canvasLocation" x="1662" y="-681"/>
+        </scene>
+        <!--IecVC-->
+        <scene sceneID="0pN-Fg-mbp">
+            <objects>
+                <viewController id="Ucu-jj-2ff" customClass="iecVC" customModule="SOTTO_iOS_updated" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dAo-Qz-Vz8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwG-oq-NCR">
+                                <rect key="frame" x="20" y="20" width="74.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="geN-o6-P1X">
+                                <rect key="frame" x="10" y="67.5" width="355" height="559.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="o7v-V5-ldY">
+                                    <size key="itemSize" width="158" height="152"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" reuseIdentifier="imgCell" id="ba8-6t-qEg" customClass="collectionViewCell" customModule="SOTTO_iOS_updated" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="158" height="152"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PHe-Dl-VcO">
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="152"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWG-1B-sQb">
+                                                    <rect key="frame" x="5" y="5" width="148" height="142.00000000000045"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="eWG-1B-sQb" secondAttribute="bottom" constant="5" id="WK3-m5-wj0"/>
+                                                <constraint firstAttribute="trailing" secondItem="eWG-1B-sQb" secondAttribute="trailing" constant="5" id="gvT-JS-gQc"/>
+                                                <constraint firstItem="eWG-1B-sQb" firstAttribute="leading" secondItem="PHe-Dl-VcO" secondAttribute="leading" constant="5" id="rEi-HF-RLZ"/>
+                                                <constraint firstItem="eWG-1B-sQb" firstAttribute="top" secondItem="PHe-Dl-VcO" secondAttribute="top" constant="5" id="rkW-5i-dHe"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="customSize" width="158" height="152"/>
+                                        <connections>
+                                            <outlet property="imgMain" destination="eWG-1B-sQb" id="K6c-72-17N"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rwG-oq-NCR" firstAttribute="leading" secondItem="eNU-cj-Dig" secondAttribute="leading" constant="20" id="5wP-oZ-mNo"/>
+                            <constraint firstItem="geN-o6-P1X" firstAttribute="top" secondItem="rwG-oq-NCR" secondAttribute="bottom" constant="20" id="O7o-CS-1Oj"/>
+                            <constraint firstItem="eNU-cj-Dig" firstAttribute="bottom" secondItem="geN-o6-P1X" secondAttribute="bottom" constant="20" id="TQj-LG-48e"/>
+                            <constraint firstItem="eNU-cj-Dig" firstAttribute="trailing" secondItem="geN-o6-P1X" secondAttribute="trailing" constant="10" id="aDh-z7-jrj"/>
+                            <constraint firstItem="geN-o6-P1X" firstAttribute="leading" secondItem="eNU-cj-Dig" secondAttribute="leading" constant="10" id="cID-eT-N5X"/>
+                            <constraint firstItem="rwG-oq-NCR" firstAttribute="top" secondItem="eNU-cj-Dig" secondAttribute="top" constant="20" id="ijN-AT-DGB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eNU-cj-Dig"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="btJ-3a-i4H"/>
+                    <connections>
+                        <outlet property="collectionView" destination="geN-o6-P1X" id="h10-5N-M4C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Vx-me-f2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2341.5999999999999" y="-681.40929535232385"/>
         </scene>
         <!--MainTBC-->
         <scene sceneID="yl2-sM-qoP">
@@ -712,7 +799,7 @@ College, JLN Road, Jaipur in April 2019.</string>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
@@ -725,7 +812,7 @@ College, JLN Road, Jaipur in April 2019.</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="0.0"/>
+            <point key="canvasLocation" x="953" y="0.0"/>
         </scene>
         <!--FAQ-->
         <scene sceneID="iOZ-nY-boe">
@@ -754,71 +841,71 @@ College, JLN Road, Jaipur in April 2019.</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ah-1y-QOI">
                                 <rect key="frame" x="40" y="40" width="100" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Sudhir Bhandari" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlL-EV-i3f">
                                 <rect key="frame" x="40" y="110" width="173" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chairman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJO-m2-xlq">
                                 <rect key="frame" x="40" y="146.5" width="73.5" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Amarjeet Mehta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZm-ak-sZE">
                                 <rect key="frame" x="40" y="187.5" width="172" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joint Director" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va3-jw-yEp">
                                 <rect key="frame" x="40" y="224" width="104" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Manish Sharma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzI-xB-h7X">
                                 <rect key="frame" x="40" y="265" width="169.5" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IEC/Media Consultant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbt-m3-FjZ">
                                 <rect key="frame" x="40" y="301.5" width="166.5" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Ajeet Singh Shaktawat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxH-cU-OEV">
                                 <rect key="frame" x="40" y="342.5" width="231" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consultant Transplant Coordinator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUZ-Va-Gul">
                                 <rect key="frame" x="40" y="379" width="264" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr. Roshan Bahadur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zC-qc-uFw">
                                 <rect key="frame" x="40" y="420" width="181" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Program Assistant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfK-KI-YeD">
                                 <rect key="frame" x="40" y="456.5" width="139.5" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="XzI-xB-h7X" firstAttribute="top" secondItem="va3-jw-yEp" secondAttribute="bottom" constant="20" id="0Mq-A2-uk4"/>
                             <constraint firstItem="EfK-KI-YeD" firstAttribute="top" secondItem="2zC-qc-uFw" secondAttribute="bottom" constant="10" id="1gZ-Ja-SI7"/>
@@ -860,6 +947,120 @@ College, JLN Road, Jaipur in April 2019.</string>
             </objects>
             <point key="canvasLocation" x="2388" y="675"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="fXK-DN-GTr">
+            <objects>
+                <viewController id="HD3-I9-6fp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yjE-KG-egE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get in touch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHw-1X-bbF">
+                                <rect key="frame" x="30" y="30" width="112.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAB-vG-ebQ">
+                                <rect key="frame" x="30" y="86.5" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second floor, New Academic Block, SMS Medical College, JLN Road, Jaipur, 302004" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bO-Ef-mc5">
+                                <rect key="frame" x="30" y="117.5" width="315" height="61"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6Y-ah-5Ww">
+                                <rect key="frame" x="30" y="208.5" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sottojaipur@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfv-lY-kKA">
+                                <rect key="frame" x="30" y="239.5" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone numbers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJI-3d-3DW">
+                                <rect key="frame" x="30" y="290.5" width="120.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+91 9829078844 (Dr. Sudhir Bhandari)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzy-mv-TdK">
+                                <rect key="frame" x="30" y="321.5" width="315" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+919829006361 (Dr. Amarjeet Mehta)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RW3-yq-6Kb">
+                                <rect key="frame" x="30" y="357" width="315" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+919829300541 (Dr. Manish Sharma)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsZ-DM-y8d">
+                                <rect key="frame" x="30" y="392.5" width="315" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+919829135692 (Dr. Ajeet Singh)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amY-ka-wm2">
+                                <rect key="frame" x="30" y="428" width="315" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+919529724467 (Mr. Roshan Bahadur)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYv-Kl-DND">
+                                <rect key="frame" x="30" y="463.5" width="315" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9bO-Ef-mc5" firstAttribute="top" secondItem="cAB-vG-ebQ" secondAttribute="bottom" constant="10" id="1Nz-04-7tp"/>
+                            <constraint firstItem="F6Y-ah-5Ww" firstAttribute="leading" secondItem="zvy-Fy-0oR" secondAttribute="leading" constant="30" id="4C5-U5-VVI"/>
+                            <constraint firstItem="RsZ-DM-y8d" firstAttribute="top" secondItem="RW3-yq-6Kb" secondAttribute="bottom" constant="15" id="4fE-Aa-D0M"/>
+                            <constraint firstItem="cAB-vG-ebQ" firstAttribute="top" secondItem="jHw-1X-bbF" secondAttribute="bottom" constant="30" id="84P-gY-gw3"/>
+                            <constraint firstItem="9bO-Ef-mc5" firstAttribute="leading" secondItem="zvy-Fy-0oR" secondAttribute="leading" constant="30" id="9gE-qb-NNb"/>
+                            <constraint firstItem="amY-ka-wm2" firstAttribute="top" secondItem="RsZ-DM-y8d" secondAttribute="bottom" constant="15" id="D3j-11-8sT"/>
+                            <constraint firstItem="RW3-yq-6Kb" firstAttribute="leading" secondItem="pzy-mv-TdK" secondAttribute="leading" id="G3v-ik-4fq"/>
+                            <constraint firstItem="hfv-lY-kKA" firstAttribute="leading" secondItem="zvy-Fy-0oR" secondAttribute="leading" constant="30" id="LMM-QS-4TB"/>
+                            <constraint firstItem="F6Y-ah-5Ww" firstAttribute="top" secondItem="9bO-Ef-mc5" secondAttribute="bottom" constant="30" id="M1I-uY-p8R"/>
+                            <constraint firstItem="KJI-3d-3DW" firstAttribute="leading" secondItem="zvy-Fy-0oR" secondAttribute="leading" constant="30" id="MCq-Ph-XMa"/>
+                            <constraint firstItem="zvy-Fy-0oR" firstAttribute="trailing" secondItem="pzy-mv-TdK" secondAttribute="trailing" constant="30" id="Mz3-qv-c89"/>
+                            <constraint firstItem="pzy-mv-TdK" firstAttribute="leading" secondItem="zvy-Fy-0oR" secondAttribute="leading" constant="30" id="NNx-6i-bP0"/>
+                            <constraint firstItem="jHw-1X-bbF" firstAttribute="leading" secondItem="zvy-Fy-0oR" secondAttribute="leading" constant="30" id="NkC-qR-evD"/>
+                            <constraint firstItem="bYv-Kl-DND" firstAttribute="leading" secondItem="zvy-Fy-0oR" secondAttribute="leading" constant="30" id="V9W-eY-O1N"/>
+                            <constraint firstAttribute="trailing" secondItem="9bO-Ef-mc5" secondAttribute="trailing" constant="30" id="Wjm-7Q-Yy9"/>
+                            <constraint firstItem="zvy-Fy-0oR" firstAttribute="trailing" secondItem="bYv-Kl-DND" secondAttribute="trailing" constant="30" id="b9U-4R-7Mb"/>
+                            <constraint firstItem="bYv-Kl-DND" firstAttribute="top" secondItem="amY-ka-wm2" secondAttribute="bottom" constant="15" id="bT1-vG-bgh"/>
+                            <constraint firstItem="amY-ka-wm2" firstAttribute="leading" secondItem="zvy-Fy-0oR" secondAttribute="leading" constant="30" id="ezK-ee-aFW"/>
+                            <constraint firstItem="cAB-vG-ebQ" firstAttribute="leading" secondItem="zvy-Fy-0oR" secondAttribute="leading" constant="30" id="gos-rx-Jdr"/>
+                            <constraint firstItem="zvy-Fy-0oR" firstAttribute="trailing" secondItem="RsZ-DM-y8d" secondAttribute="trailing" constant="30" id="h4x-26-dHc"/>
+                            <constraint firstItem="pzy-mv-TdK" firstAttribute="top" secondItem="KJI-3d-3DW" secondAttribute="bottom" constant="10" id="k0k-QB-sNN"/>
+                            <constraint firstItem="hfv-lY-kKA" firstAttribute="top" secondItem="F6Y-ah-5Ww" secondAttribute="bottom" constant="10" id="lHd-16-Rbb"/>
+                            <constraint firstItem="RsZ-DM-y8d" firstAttribute="leading" secondItem="zvy-Fy-0oR" secondAttribute="leading" constant="30" id="nJB-Xc-WE3"/>
+                            <constraint firstItem="KJI-3d-3DW" firstAttribute="top" secondItem="hfv-lY-kKA" secondAttribute="bottom" constant="30" id="ng9-M6-cdp"/>
+                            <constraint firstItem="RW3-yq-6Kb" firstAttribute="trailing" secondItem="pzy-mv-TdK" secondAttribute="trailing" id="odb-bF-fKn"/>
+                            <constraint firstItem="jHw-1X-bbF" firstAttribute="top" secondItem="zvy-Fy-0oR" secondAttribute="top" constant="30" id="qMl-vw-sZl"/>
+                            <constraint firstItem="RW3-yq-6Kb" firstAttribute="top" secondItem="pzy-mv-TdK" secondAttribute="bottom" constant="15" id="sHM-zb-bSg"/>
+                            <constraint firstItem="zvy-Fy-0oR" firstAttribute="trailing" secondItem="amY-ka-wm2" secondAttribute="trailing" constant="30" id="wT8-t5-Pb6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zvy-Fy-0oR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kWK-d6-sbI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PeC-Th-dBN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-484" y="-715"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="0tS-7j-a3Y">
             <objects>
@@ -881,14 +1082,17 @@ College, JLN Road, Jaipur in April 2019.</string>
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="2500" height="1667"/>
         <image name="checkmark.circle.fill" catalog="system" width="64" height="60"/>
         <image name="info.circle" catalog="system" width="64" height="60"/>
         <image name="logo" width="932" height="956"/>
         <image name="person.circle.fill" catalog="system" width="64" height="60"/>
         <image name="questionmark.circle" catalog="system" width="64" height="60"/>
+        <image name="square.and.arrow.down" catalog="system" width="60" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DMa-Gu-UYy"/>
+        <segue reference="ox8-tA-Cp1"/>
+        <segue reference="1pJ-L8-OwU"/>
         <segue reference="InM-eh-0Ty"/>
     </inferredMetricsTieBreakers>
 </document>

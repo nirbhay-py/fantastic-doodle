@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>123359906251-65g3c6f2rc00oju862755sk7313281m1.apps.googleusercontent.com</string>
+	<string>79253404477-dk9jg03hn8ggf6cgd9dihqshcu9ndb76.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.123359906251-65g3c6f2rc00oju862755sk7313281m1</string>
+	<string>com.googleusercontent.apps.79253404477-dk9jg03hn8ggf6cgd9dihqshcu9ndb76</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCwMcmIIGmqQkiQiKbPFli3_8JG8FmK4WA</string>
+	<string>AIzaSyBx1cbpAbpJzxA5MevYkg_ogRC9Jw3Gfc0</string>
 	<key>GCM_SENDER_ID</key>
-	<string>123359906251</string>
+	<string>79253404477</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.NirbhaySingh.SOTTO-iOS-updated</string>
 	<key>PROJECT_ID</key>
-	<string>sotto-a8d7b</string>
+	<string>sotto-afe87</string>
 	<key>STORAGE_BUCKET</key>
-	<string>sotto-a8d7b.appspot.com</string>
+	<string>sotto-afe87.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:123359906251:ios:8544096245af2425f60e4e</string>
+	<string>1:79253404477:ios:884576961e8e248078a354</string>
 	<key>DATABASE_URL</key>
-	<string>https://sotto-a8d7b.firebaseio.com</string>
+	<string>https://sotto-afe87.firebaseio.com</string>
 </dict>
 </plist>
